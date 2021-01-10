@@ -1,0 +1,55 @@
+<style> 
+			/*CSS*/
+
+		/*por ID*/
+		#portafolio_title{
+		text-align: center;
+		}
+		
+		/*por etiqueta*/
+		h2{
+			background-color: yellow;
+		}
+			/*por clase*/
+		.subtitulo{
+			text-align: center;
+		}
+		
+		#GoogleText{
+
+			cursor: wait;
+		}
+		/*anidacion por etiqueta clase*/
+		p .abrebiatura{
+			font-family: verdana;
+		}
+		/*anidaciones por etiqueta y etiqueta*/
+		ol ul{
+			font-size: 30px;
+		}
+		/*anidaciones por etiqueta y ID*/
+		ol #progra1{
+			color: blue;
+		}
+		.indicelist a:hover{
+			font-weight:bold;
+		}
+		.indicelist a:hover{
+			font-weight:bold;
+		}
+
+.CicloGrupo{
+	width: 100%;
+}
+#contenidoCursosLlevados div {
+
+width: 100%;
+}
+
+@media only screen and (max-width: 992px){
+
+	body{
+		background-color: blue;
+	}
+}
+></style>

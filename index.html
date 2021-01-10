@@ -5,40 +5,59 @@
 		<!--Para que los codigos acci si se puedan usar-->
 		<meta charset="utf-8">
 		<!--Parte no visible-->
+
 		<title>Portafolio</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 	</head>
 	<body>
+
+	<h1 id="portafolio_title">Portafolio</h1>
+	<h2>Indice</h2>
+
+<ul class="indicelist">
+
+	<li><a href="#notas">notas</a></li>
+	<li><a href="#contacto">contacto</a></li>
+	
+</ul>
 		<!--Body es la Parte  visible-->
 
 		<!--Etiquetas para texto
 			Sirven para poner tìtulos, subtitulos, etc, por tamaño-->
+		
 		<h1>TITULO GRANDE</h1>
-		<h2>TITULO SEMIGRANDE</h2>
+		<h2 class="subtitulo">TITULO SEMIGRANDE</h2>
 		<H3>TITULO MEDIANO</H3>
 		<!--LABEL sirve para no perder la estructura
 			de un parrafo-->
 
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <label style="font-weight:bold; ">Vivamus</label> porttitor eu leo sed sollicitudin. Nulla lectus sapien, porttitor in nunc at, ornare sodales risus. Donec iaculis egestas facilisis. Vestibulum a turpis viverra, elementum odio sit amet, interdum metus. Ut odio augue, sagittis sit amet metus ut, volutpat eleifend massa. Morbi molestie magna vitae odio ullamcorper tristique. Nulla sodales faucibus euismod. Vivamus ac magna quis massa consectetur aliquet. Suspendisse potenti.</p>
-		<p>Nam pulvinar lectus mi, vel euismod felis lobortis a. Mauris elit neque, accumsan in lorem quis, vehicula rhoncus orci. Vivamus sagittis ante vel dapibus cursus. Aliquam eget sem aliquet, egestas diam ac, congue lectus. Aliquam eget sollicitudin velit. Donec viverra pulvinar dui et tincidunt. Vivamus vulputate dictum orci eget rhoncus. Vivamus mattis viverra nisi, et consectetur risus fermentum non. Ut varius lorem a consequat faucibus. In hac habitasse platea dictumst.
-		
+		<p id="GoogleText">Nam pulvinar lectus mi, vel euismod felis lobortis a. Mauris elit neque, accumsan in lorem quis, vehicula rhoncus orci. Vivamus sagittis ante vel dapibus cursus. Aliquam eget sem aliquet, egestas diam ac, congue lectus. Aliquam eget sollicitudin velit. Donec viverra pulvinar dui et tincidunt. Vivamus vulputate dictum orci eget rhoncus. Vivamus mattis viverra nisi, et consectetur risus fermentum non. Ut varius lorem a consequat faucibus. In hac habitasse platea dictumst.
+		<ABBR TITLE="Universidad Peuana de Ciencias Aplicadas" class="abrebiatura">UPC</ABBR>
 		</p>
-		<ABBR TITLE="Universidad Peuana de Ciencias Aplicadas">UPC</ABBR>
+		
 
 		<!--Listas-->
-
-		<h2>Cursos LLevados</h2>
-
-
+		<!--por como atributo-->
+		<h2 style="color: red; text-transform: lowercase;"> Cursos LLevados</h2>
+		<h2>Notas</h2>
+		<div id="contenidoCursosLlevados">
+<div class="CicloGrupo">
 		<ol>
 			<!--Order List-->
 			<li>Primer ciclo
 				<ul>
-					<li type="circle">Pogramación 1</li>
+					<li id="progra1" type="circle">Pogramación 1</li>
 					<li type="circle">&eacutetica</li>
 				</ul>
 
 			</li>
-			<li>segundo ciclo
+		</ol >
+		</div>
+
+<div class="CicloGrupo">
+			<ol>
+			<li value="2">segundo ciclo
 				<ul>
 					<li type="circle">Pogramación </li>
 					<li type="circle">fisica 1</li>
@@ -46,8 +65,10 @@
 
 			</li>
 		
-		</ol>
+</div>
 
+		</ol>
+</div>
 		<img src="https://lh3.googleusercontent.com/a-/AOh14GgdzmQd4ox9o-HfHJv34zH4O0clrmAq3uCDupZT=s45-p-k-no-mo" alt="imagen de Izumi" title="Izumi" width="10%">
 		<!--todos los eventos inician en on-->
 
@@ -57,7 +78,7 @@
 
 <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/920145412&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/badbunny115" title="Bad Bunny" target="_blank" style="color: #cccccc; text-decoration: none;">Bad Bunny</a> · <a href="https://soundcloud.com/badbunny115/dakiti-ft-jhay-cortez" title="Dakiti ft. Jhay Cortez" target="_blank" style="color: #cccccc; text-decoration: none;">Dakiti ft. Jhay Cortez</a></div>
 
-<h2>Notas</h2>
+<h2 id="notas">Notas</h2>
 	<!--Para ver los atributos debe  hacer click en control+espacio-->
 <table border="1" align="left">
 	<tr>
@@ -90,9 +111,9 @@
 <br>
 
 <!--Formulario-->
-<h2>Contacto</h2>
+<h2  id="contacto" class="subtitulo">Contacto</h2>
 <form action="Post">
-	<p>
+	<p >
 		<label>Nombre:</label>
 		<input type="text" name="inputNombre">
 	</p>
