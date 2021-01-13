@@ -1,226 +1,215 @@
-<!--Este es mi primera pagina web-->
 <!DOCTYPE html>
-<html lang="es">
+<html>
 	<head>
-		<!--Para que los codigos acci si se puedan usar-->
+		<title>Portafolio personal- Rodrigo Lara</title>
 		<meta charset="utf-8">
-		<!--Parte no visible-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="Blog Personal">
+		<meta name="autor" content="Rodrigo Lara">
+		<meta name="viewport" content="width=device-with">
 
-		<title>Portafolio</title>
-<link rel="stylesheet" type="text/css" href="css/styles.css">
+    	<!-- FontAwesome JS-->
+		<script defer src="assets/fontawesome/js/all.min.js"></script>
+
+		<!--Theme css-->
+		<link id="theme-style" rel="stylesheet" type="text/css" href="assets\css\theme-1.css">
 	</head>
 	<body>
+		<header class="header text-center">
+			<h1 class="blog-name pt-lg-4 mb-0"> 
+			<a href="index.html">
+			Rodrigo Lara
+			</a>
+			</h1>
 
-	<h1 id="portafolio_title">Portafolio</h1>
-	<h2>Indice</h2>
+			<nav class="navbar navbar-expand-lg navbar-dark">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-<ul class="indicelist">
+				<div id="navigation" class="collapse navbar-collapse flex-column">
+					<!--Profile Section-->
+					<div class="profile-section pt-3 pt-lg-0">
+						<img class="profile-image mb-3 rounded-circle mx-auto"  src="https://avatars2.githubusercontent.com/u/42646296?s=460&u=200d8e83c7ab0a9fcbda26fdafae3f797898ee5d&v=4" alt="profile image">
 
-	<li><a href="#notas">notas</a></li>
-	<li><a href="#contacto">contacto</a></li>
-	
-</ul>
-		<!--Body es la Parte  visible-->
+						<div class="bio mb-3">
+							Hola, me llamo Rodrigo Lara. Estudiante de Ingenieria de software y desarrollador web.
+							<br>
+							<a href="about.html">Conoce mas sobre mi</a>
+						</div>
 
-		<!--Etiquetas para texto
-			Sirven para poner tìtulos, subtitulos, etc, por tamaño-->
-		
-		<h1>TITULO GRANDE</h1>
-		<h2 class="subtitulo">TITULO SEMIGRANDE</h2>
-		<H3>TITULO MEDIANO</H3>
-		<!--LABEL sirve para no perder la estructura
-			de un parrafo-->
+						<ul class="social-list list-inline py-3 mx-auto">
+							<li class="list-inline-item">
+								<a href="https://github.com/Rodrigolara05" target="_blank">
+									<i class="fab fa-github-alt fa-fw">
+									</i>
+								</a>
+							</li>
 
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <label style="font-weight:bold; ">Vivamus</label> porttitor eu leo sed sollicitudin. Nulla lectus sapien, porttitor in nunc at, ornare sodales risus. Donec iaculis egestas facilisis. Vestibulum a turpis viverra, elementum odio sit amet, interdum metus. Ut odio augue, sagittis sit amet metus ut, volutpat eleifend massa. Morbi molestie magna vitae odio ullamcorper tristique. Nulla sodales faucibus euismod. Vivamus ac magna quis massa consectetur aliquet. Suspendisse potenti.</p>
-		<p id="GoogleText">Nam pulvinar lectus mi, vel euismod felis lobortis a. Mauris elit neque, accumsan in lorem quis, vehicula rhoncus orci. Vivamus sagittis ante vel dapibus cursus. Aliquam eget sem aliquet, egestas diam ac, congue lectus. Aliquam eget sollicitudin velit. Donec viverra pulvinar dui et tincidunt. Vivamus vulputate dictum orci eget rhoncus. Vivamus mattis viverra nisi, et consectetur risus fermentum non. Ut varius lorem a consequat faucibus. In hac habitasse platea dictumst.
-		<ABBR TITLE="Universidad Peuana de Ciencias Aplicadas" class="abrebiatura">UPC</ABBR>
-		</p>
-		
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-twitter fa-fw">
+									</i>
+								</a>
+							</li>
 
-		<!--Listas-->
-		<!--por como atributo-->
-		<h2 style="color: red; text-transform: lowercase;"> Cursos LLevados</h2>
-		<h2>Notas</h2>
-		<div id="contenidoCursosLlevados">
-<div class="CicloGrupo">
-		<ol>
-			<!--Order List-->
-			<li>Primer ciclo
-				<ul>
-					<li id="progra1" type="circle">Pogramación 1</li>
-					<li type="circle">&eacutetica</li>
-				</ul>
+							<li class="list-inline-item">
+								<a href="#">
+									<i class="fab fa-facebook fa-fw">
+									</i>
+								</a>
+							</li>
+						</ul>
+						<hr>
 
-			</li>
-		</ol >
-		</div>
+					</div>
 
-<div class="CicloGrupo">
-			<ol>
-			<li value="2">segundo ciclo
-				<ul>
-					<li type="circle">Pogramación </li>
-					<li type="circle">fisica 1</li>
-				</ul>
+					<ul class="navbar-nav flex-column text-left">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html">
+								<i class="fas fa-home fa-fw mr-2"></i>
+								Blog Home
+							</a>
+						</li>
 
-			</li>
-		
-</div>
+						<li class="nav-item">
+							<a class="nav-link" href="blog-post.html">
+								<i class="fas fa-book fa-fw mr-2"></i>
+								Blog Post
+							</a>
+						</li>
 
-		</ol>
-</div>
-		<img src="https://lh3.googleusercontent.com/a-/AOh14GgdzmQd4ox9o-HfHJv34zH4O0clrmAq3uCDupZT=s45-p-k-no-mo" alt="imagen de Izumi" title="Izumi" width="10%">
-		<!--todos los eventos inician en on-->
+						<li class="nav-item">
+							<a class="nav-link" href="about.html">
+								<i class="fas fa-user fa-fw mr-2"></i>
+								About Me
+							</a>
+						</li>
 
-<audio controls="">
-	<source src="sonido1.mp3" type="audio/mp3">
-</audio>
+					</ul>
 
-<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/920145412&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/badbunny115" title="Bad Bunny" target="_blank" style="color: #cccccc; text-decoration: none;">Bad Bunny</a> · <a href="https://soundcloud.com/badbunny115/dakiti-ft-jhay-cortez" title="Dakiti ft. Jhay Cortez" target="_blank" style="color: #cccccc; text-decoration: none;">Dakiti ft. Jhay Cortez</a></div>
+					<div class="my-2 my-md-3">
+						<a class="btn btn-primary" href="#" target="_blank">Get in touch</a>
+					</div>
+				</div>
+			</nav>
 
-<h2 id="notas">Notas</h2>
-	<!--Para ver los atributos debe  hacer click en control+espacio-->
-<table border="1" align="left">
-	<tr>
-		<th>
-			Taller de creatividad
-		</th>
-		<th>
-			Ética
-		</th>
-		<th>
-			Física
-		</th>
-	</tr>
-	<tr>
-		<td> 16.00</td>
-		<td> 20.00</td>
-		<td> 14.00</td>
-	</tr>
+		</header>
 
-	<tr>
-		<td> 13.00</td>
-		<td> 10.00</td>
-		<td> 18.00</td>
-	</tr>
+		<div class="main-wrapper">
+			<section class="cta-section theme-bg-light py-5">
+				<div class="container text-center">
+					<h2 class="heading">Codigo Fuente Blog- Un blog para desarrolladores</h2>
+					<div class="intro"> Bienvenido a mi blog. Suscribite para que tengas lo ultimo en tu bandeja de correo.</div>
+					<form method="POST" class="signup-form form-inline justify-content-center pt-3">
+						<div class="form-group">
+							<label class="sr-only" for="semail">Tu email</label>
+							<input type="email" name="semaill" id="semail" class="form-control mr-md-1 semail" placeholder="Ingrese Email">
+						</div>
+						<button type="submit" class="btn btn-primary">Suscribete</button>
+					</form>
+				</div>
+			</section>
 
-</table>
+			<section class="blog-list px-3 py-5 pd-md-5">
+				<div class="container">
+					
+					<div class="item mb" >
+						<div class="media">
+							<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5WeDT496cHEGv059_DNKXfAYdDJWFZvlbAQ&usqp=CAU" alt="imagen de post">
+							<div class="media-body">
+								<h3 class="title mb-1">
+									<a href="blog-post.html">
+										Porque todo desarrollador deberia saber HTML, CSS y Javascript
+									</a>
+								</h3>
+								<div class="meta mb-1">
+									<span class="date">
+										Publicado hace 16 horas
+									</span>
+									<span class="time">
+										6 min de lectura
+									</span>
+									<span class="comment">
+										10 comentarios
+									</span>
+								</div>
+								<div class="intro">
+									Hoy en dia todo desarrollador web esta constantemente aprendiendo nuevas tecnologias. Sin embargo, siempre se encuentra con problemas nativos de CSS, HTML, Javascript...
+								</div>
+								<a class="more-link" href="blog-post.html">Read more</a>
+							</div>
+						</div>	
+					</div>
+					<hr>
+					<div class="item mb" >
+						<div class="media">
+							<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="https://androidayuda.com/app/uploads-androidayuda.com/2019/07/android-error.jpg?x=345&y=211" alt="imagen de post">
+							<div class="media-body">
+								<h3 class="title mb-1">
+									<a href="blog-post.html">
+										10 cosas que no sabias del desarrollo movil
+									</a>
+								</h3>
+								<div class="meta mb-1">
+									<span class="date">
+										Publicado hace 2 dias
+									</span>
+									<span class="time">
+										8 min de lectura
+									</span>
+									<span class="comment">
+										25 comentarios
+									</span>
+								</div>
+								<div class="intro">
+									Hoy en dia todo desarrollador movil esta constantemente aprendiendo nuevas tecnologias. Sin embargo, siempre se encuentra con problemas en su entorno de desarrolladores con malas practicas, etc ...
+								</div>
+								<a class="more-link" href="blog-post.html">Read more</a>
+							</div>
+						</div>	
+					</div>
+					<hr>
+					<div class="item mb">
+						<div class="media">
+							<img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYTiD2dwUHV27p9rojv9NrqqWpeIVsm24SSQ&usqp=CAU" alt="imagen de post">
+							<div class="media-body">
+								<h3 class="title mb-1">
+									<a href="blog-post.html">
+										Python el futuro del backend
+									</a>
+								</h3>
+								<div class="meta mb-1">
+									<span class="date">
+										Publicado hace 10 dias
+									</span>
+									<span class="time">
+										3 min de lectura
+									</span>
+									<span class="comment">
+										200 comentarios
+									</span>
+								</div>
+								<div class="intro">
+									Python es una de las tecnologias mas usadas y de los lenguajes mas queridos por los desarrolladores, llegando a crear software tremendamente complejos solo con ...
+								</div>
+								<a class="more-link" href="blog-post.html">Read more</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</section>
 
-<br>
-<br>
-<br>
-
-<!--Formulario-->
-<h2  id="contacto" class="subtitulo">Contacto</h2>
-<form action="Post">
-	<p >
-		<label>Nombre:</label>
-		<input type="text" name="inputNombre">
-	</p>
-	<p>
-	<label>Email:</label>
-	<input type="Email" name="inputEmail">
-	</p>
-
-
-<p>
-	<label>Semana:</label>
-	<input type="week" name="inputEmail">
-	</p>
-
-
-<p>
-	<label>Color:</label>
-	<input type="color" name="inputEmail">
-	</p>
-
-
-<p>
-	<label>Hora:</label>
-	<input type="time" name="inputEmail">
-	</p>
-
-
-	<p>
-	<label>Password:</label>
-	<input type="Password" name="inputPassword">
-	</p>
-
-	<p>
-	<label>Alternativas:</label>
-	<label>
-		<input type="checkbox" >
-		Si
-	</label>
-	<label>
-		<input type="checkbox" >
-		No
-	</label>
-
-	</p>
-	
-
-	<p>
-	<label>Género:</label>
-	<label>
-		<input type="radio" name="Género">
-		F
-	</label>
-	<label>
-		<input type="radio" name="Género" >
-		M
-	</label>
-
-	</p>
-	
-
-	<p>
-	<label>Fecha:</label>
-	<label>
-		<input type="date" >
-	</label>
-	</p>
-	
-
-
-
-	<p>
-	<label>Archivo:</label>
-	<label>
-		<input type="file" accept=".jpg,.png">
-	</label>
-	</p>
-
-
-	<button value="Subir datos" disabled="">
-		Subir datos
-	</button>
-
-</form>
-
-<title>Mis otras paginas </title>
-<ul>
-	<li type="square">
-		<a href="https://www.google.com"
-		target="_blank"> 
-		mis poyectos <a/>
-
-	</li>
-	<li type="square">
-		<a href="esperiencia.html"
-		target="_self"> 
-		mis experiencia <a/>
-
-	</li>
-
-
-	<li type="square">
-		<a href="certificado.html"
-		target="_self"> 
-		mis certificado <a/>
-
-	</li>
-</ul>
+			<footer class="footer text-center py-2 theme-bg-dark">
+				<small class="copyright">Diseñado
+					<i class="fas fa-coffee">
+					</i>
+					por 
+					<a href="#" target="_blank">Rodrigo Lara</a>
+					para los desarrolladores
+				</small>
+			</footer>
+		</div> <!--Main Wrapper-->
 
 	</body>
 </html>
